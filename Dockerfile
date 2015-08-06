@@ -1,4 +1,4 @@
-FROM ralf/jdk8
+FROM ralfbosz/jdk8
 MAINTAINER "Ralf Bosz <ralf@bosz.com>"
 
 ENV LOGSTASH_URL https://download.elastic.co/logstash/logstash/logstash-1.5.3.tar.gz
