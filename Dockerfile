@@ -6,9 +6,8 @@ ENV LOGSTASH_HOME /opt/logstash-1.5.3
 
 # Install JDK8
 WORKDIR /opt
-RUN wget -nv --no-check-certificate &{LOGSTASH_URL} && \
+RUN wget -nv --no-check-certificate ${LOGSTASH_URL} && \
     tar -xf logstash-*.tar.gz && \
-    rm logstash-*.tar.gz && \
-    chown -R root:root ${LOGSTASH_HOME}
+    rm logstash-*.tar.gz
 
 ENV LOGSTASH_URL ""
